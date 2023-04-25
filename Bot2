@@ -1,0 +1,20 @@
+import discord
+import random
+# Переменная intents - хранит привилегии бота
+intents = discord.Intents.default()
+# Включаем привелегию на чтение сообщений
+intents.message_content = True
+# Создаем бота в переменной client и передаем все привелегии
+client = discord.Client(intents=intents)
+
+import random
+
+def gen_pass(pass_length):
+    elements = ["+_+","*_*","(*_*)","~_~","<3","*^*",]
+    password = ""
+
+    for i in range(pass_length):
+        password += random.choice(elements)
+
+    return password
+client.run("MTA5OTI5Nzc1Nzk2Mjk3MzIxNQ.GUYkY4.ySjonCSaVEItmUNi1G27EWquACESD2XmayqW_U")
